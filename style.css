@@ -1,0 +1,148 @@
+body {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  background-color: #F8F4F3;
+  align-items: baseline;
+}
+
+h1 {
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 6vw;
+  text-align: left;
+  color: #000080;
+}
+
+html {
+  height: 100%;
+}
+
+.trigger {
+  font-size: 3vw;
+  font-weight: bold;
+  color: Black;
+  /*border: 5px solid black;*/
+  /*background-color: #000080;*/
+  padding: 0px;
+}
+
+.robot {
+  background: #000080;
+
+}
+
+.human {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+  }
+
+.details {
+  font-size: 2.5vw;
+  line-height: auto;
+  margin-top: -10px;
+}
+
+.text {
+  font-size: 2vw;;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.html-class {
+  margin-left: -15vw;
+  width: 1050px;
+  font-size: ;
+}
+
+.CharOverride-13 {
+  font-style: italic;
+  color: black;
+}
+
+.sliding-panel {
+  position: fixed;
+  width: 20px;
+  height: 100%;
+}
+
+.story {
+  /*visibility: hidden;*/
+  margin: 30px;
+  font-size: 3.5vw;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/*.reference {
+  color: pink;
+}*/
+
+#left-door {
+  background:black;
+  color: white;
+  overflow: scroll;
+  top:0;
+  left:0;
+  padding: 30px;
+  border: none;
+
+}
+
+#right-door {
+  background: black;
+  color: white;
+  overflow: scroll;
+  top:0;
+  right:0;
+  padding: 30px;
+
+}
+
+#content {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-left: 20vw;
+  margin-top: 5vw;
+  width: 60%;
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+  h1{
+    font-size: 5vw;
+  }
+
+  .trigger{
+    font-size: 5vw;
+  }
+
+  .details {
+    font-size: 3vw;
+  }
+
+  .text{
+    font-size: 5vw;
+  }
+
+  .story {
+    /*visibility: hidden;*/
+    margin: 30px;
+    font-size: 5vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  #content {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    width: 80%;
+}
