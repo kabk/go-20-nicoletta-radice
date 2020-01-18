@@ -72,6 +72,8 @@ html {
   position: fixed;
   width: 20px;
   height: 100%;
+  /*border: 15px solid black;*/
+  background: blue;
 
 }
 
@@ -83,12 +85,12 @@ html {
 }
 
 .circle {
-  height: 25vw;
-  width: 25vw;
-  background-color: transparent;
+  height: 15vw;
+  width: 15vw;
+  background-color: blue;
   border-radius: 50%;
   text-align:center;
-  border: 30px solid black;
+  /*border: 15px solid black;*/
 
 
 }
@@ -100,18 +102,18 @@ html {
 #right {
   position: fixed;
   top:5vh;
-  left:85%;
+  left:88%;
 
 }
 
 #left {
   position: fixed;
   top:80vh;
-  left: -10vw;;
+  left: -3vw;;
 }
 
 #left-door {
-  background:black;
+
   /*border-right: 3px solid black*/
   color: white;
   overflow: scroll;
@@ -123,7 +125,7 @@ html {
 }
 
 #right-door {
-  background: black;;
+
   /*border-left: 3px solid black;*/
   color: white;
   overflow: scroll;

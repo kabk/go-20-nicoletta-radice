@@ -60,14 +60,14 @@ function actionLeft() {
 function actionRight() {
     if ( $("#right").hasClass("isOpen") ) {
       $("#right").animate({
-        left: '85%'
+        left: '88%'
       }),
       $("#right-door").animate({
           width: '20px'
       });
     } else {
       $("#right").animate({
-        left: '10vw'
+        left: '15vw'
       }),
       $("#right-door").animate({
           width: '80%'
