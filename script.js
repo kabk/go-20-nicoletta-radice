@@ -67,7 +67,7 @@ function actionRight() {
       });
     } else {
       $("#right").animate({
-        left: '15vw'
+        left: '13vw'
       }),
       $("#right-door").animate({
           width: '80%'

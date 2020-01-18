@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: white;
   align-items: baseline;
-  margin-bottom: 10vh;;
+  margin-bottom: 1000px;
 }
 
 
@@ -16,7 +16,7 @@ h1 {
   text-align: left;
   color: #00008B;
   font-family: 'IBM Plex Serif';
-  margin-bottom: 20vh;
+  margin-bottom: -4vh;
 }
 
 html {
@@ -39,25 +39,26 @@ html {
 
 .footnote {
   align-items: center;
+  width: 75%;
+  font-size: 3.5vw;
+  line-height: 2.5vh;
+
 }
 
 
 .footnotes {
-  font-size: 2.5vw;
-  line-height: 2vh;
   background-color: white;
   z-index: 1;
   padding-top: 1vh;
   padding-bottom: 1.5vh;
-  padding-left: 5vw;
-  padding-right: 10vw;
+  padding-left: 9vw;
   position: fixed;
   bottom: 0;
   left: 4vw;;
   margin: 0;
   /*margin-top: 10vh;*/
   overflow: scroll;
-  height: 5.5vh;
+  height: 6vh;
   /*border: 10px solid red;*/
 
 }
@@ -80,7 +81,8 @@ html {
 .details {
   font-size: 2.5vw;
   position: absolute;
-  top: 10vh;
+  top: 90vh;
+  left: 13vw;
   line-height: 3vh;
 }
 
@@ -125,7 +127,7 @@ video {
   height: 100%;
   /*border: 15px solid black;*/
   background: #00008B;
-  z-index: 2;
+  z-index: 1;
 
 }
 
@@ -137,13 +139,23 @@ video {
 }
 
 .circle {
-  height: 10vh;
+  /*height: 8vh;
   width: 15vw;
   background-color: #00008B;
   border-radius: 50%;
   text-align:center;
-  /*border: 15px solid black;*/
-
+  font-size:10vw;
+  line-height:500px;
+  text-align:center;
+  color: white;*/
+  width:100px;
+  height:100px;
+  border-radius:250px;
+  font-size:40px;
+  color:#fff;
+  line-height:100px;
+  text-align:center;
+  background:#00008B;
 
 }
 
@@ -160,8 +172,8 @@ video {
 
 #left {
   position: fixed;
-  top:80vh;
-  left: -3vw;;
+  top:60vh;
+  left: 2vw;
 }
 
 #left-door {
