@@ -2,7 +2,7 @@ body {
   margin-top: 0;
   margin-right: 0;
   padding: 0;
-  background-color: #F8F4F3;
+  background-color: white;
   align-items: baseline;
 }
 
@@ -13,12 +13,14 @@ h1 {
   font-weight: 700;
   line-height: 6vw;
   text-align: left;
-  color: #000080;
+  color: black;
 }
 
 html {
   height: 100%;
 }
+
+
 
 .trigger {
   font-size: 3vw;
@@ -70,6 +72,7 @@ html {
   position: fixed;
   width: 20px;
   height: 100%;
+
 }
 
 .story {
@@ -79,14 +82,38 @@ html {
   font-family: Times;
 }
 
+.circle {
+  height: 25vw;
+  width: 25vw;
+  background-color: transparent;
+  border-radius: 50%;
+  text-align:center;
+  border: 30px solid black;
+
+
+}
+
 /*.reference {
   color: pink;
 }*/
 
+#right {
+  position: fixed;
+  top:5vh;
+  left:85%;
+
+}
+
+#left {
+  position: fixed;
+  top:80vh;
+  left: -10vw;;
+}
+
 #left-door {
-  background: white;
+  background:black;
   /*border-right: 3px solid black*/
-  color: black;
+  color: white;
   overflow: scroll;
   top:0;
   left:0;
@@ -96,9 +123,9 @@ html {
 }
 
 #right-door {
-  background: white;
+  background: black;;
   /*border-left: 3px solid black;*/
-  color: black;
+  color: white;
   overflow: scroll;
   top:0;
   right:0;
