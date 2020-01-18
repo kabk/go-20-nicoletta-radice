@@ -120,3 +120,7 @@ $(".clickable2").on("click", actionRight);
 //   }
 //   $(this).toggleClass("isOpen");
 // });
+
+$('#triggervideo').click(function(){
+  $('video').trigger('play');
+})
