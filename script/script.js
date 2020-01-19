@@ -1,12 +1,13 @@
+// highlight js
 hljs.initHighlightingOnLoad();
 
-
+// human and robot switch
 $('.human').hide();
 $('.robot pre').click(function(){
     $('.robot').hide();
     $('.human').show();
 });
-$('.human h2').click(function(){
+$('.human button').click(function(){
     $('.robot').show();
     $('.human').hide();
 });
@@ -16,28 +17,7 @@ $(".trigger").click(function(){
     $(this).next(".toggle").slideToggle("slow");
   });
 
-
-//   $(".sliding-panel").click(function(){
-//     if ( $(this).hasClass("isOpen") ) {
-//       $(this).animate({
-//         width: '20px'
-//       }),
-//       $(".circle").animate({
-//         marginLeft: '0vw'
-//       });
-//     } else {
-//       $(this).animate({
-//         width: '80%'
-//       }),
-//       $(".circle").animate({
-//         marginLeft: '75vw'
-//       });
-//     }
-//     $(this).toggleClass("isOpen");
-// });
-
-
-
+//sliding panels
 function actionLeft() {
   if ( $("#left").hasClass("isOpen") ) {
         $("#left").animate({
@@ -56,6 +36,7 @@ function actionLeft() {
       }
       $(this).toggleClass("isOpen");
 }
+
 
 function actionRight() {
     if ( $("#right").hasClass("isOpen") ) {
@@ -76,12 +57,14 @@ function actionRight() {
     $("#right").toggleClass("isOpen");
 }
 
-$(".swipable").on("swipe", actionLeft);
+//mobile swipe and click
+// $(".swipable").on("swipe", actionLeft);
 $(".clickable").on("click", actionLeft);
 
-$(".swipable2").on("swipe", actionRight);
+// $(".swipable2").on("swipe", actionRight);
 $(".clickable2").on("click", actionRight);
 
+//change z-index to panels because there was a bug in which you would open them both and get stuck
 $(function() {
     // Change this selector to find whatever your 'boxes' are
   var top = $(".panel-container");
@@ -101,11 +84,12 @@ $(function() {
         el.css("z-index", max + 10 );
     });
 });
-
+//video plays when you click on the trigger
 $('#triggervideo').click(function(){
   $('video').trigger('play');
 })
 
+//image zoom on click
 $( ".image" ).click(function() {
   $(this).toggleClass('large')
 });
