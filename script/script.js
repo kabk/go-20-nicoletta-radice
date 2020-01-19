@@ -105,3 +105,7 @@ $(function() {
 $('#triggervideo').click(function(){
   $('video').trigger('play');
 })
+
+$( ".image" ).click(function() {
+  $(this).toggleClass('large')
+});

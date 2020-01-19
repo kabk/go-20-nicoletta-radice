@@ -41,16 +41,17 @@ html {
 .footnote {
   align-items: center;
   width: 75%;
-  font-size: 3.5vw;
-  line-height: 2.5vh;
+  font-size: 3vw;
+  line-height: 3vw;
+  padding-top: 3%;
 
 }
 
 
 .footnotes {
-  background-color: white;
+  background-color: LightBlue;
   z-index: 1;
-  padding-top: 1vh;
+
   padding-bottom: 1.5vh;
   padding-left: 9vw;
   position: fixed;
@@ -59,7 +60,7 @@ html {
   margin: 0;
   /*margin-top: 10vh;*/
   overflow: scroll;
-  height: 6vh;
+  height: 8%;
   /*border: 10px solid red;*/
 
 }
@@ -123,6 +124,7 @@ video {
   background: #00008B;
   z-index: 1;
 
+
 }
 
 .story {
@@ -150,13 +152,33 @@ video {
   width:100px;
   height:100px;
   border-radius:250px;
-  font-size:40px;
+  font-size:39px;
   color:#fff;
   line-height:100px;
   text-align:center;
   background:#00008B;
+  /*background: red;*/
+  border: 1px solid white;
+}
 
+.image {
+  transition: all 2s;
+  width:30%;
 
+}
+
+.description{
+  font-size: 3vw;
+  line-height: 3.5vw;
+}
+
+img{
+    font-size: 3vw;
+    line-height: 3.5vw;
+}
+
+.large {
+  width: 95%;
 }
 
 /*.reference {
@@ -202,6 +224,7 @@ video {
 #content {
   text-align: left;
   padding-top: 10px;
+  padding-bottom: 15%;
   padding-left: 10px;
   margin-left: 20vw;
   /*margin-top: 70vh;*/
