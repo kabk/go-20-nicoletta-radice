@@ -139,8 +139,8 @@ pre {
 .story {
   /*visibility: hidden;*/
   margin: 30px;
-  font-size: 3.5vw;
-  font-family: Times;
+  font-size: 3vw;
+  /*font-family: Times;*/
 }
 
 .panel-container{
@@ -236,7 +236,7 @@ pre {
 
   .story {
     margin: 30px;
-    font-size: 5vw;
+    font-size: 3vw;
     font-family: 'IBM Plex Sans', sans-serif;
   }
 
