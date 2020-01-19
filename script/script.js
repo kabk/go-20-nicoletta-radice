@@ -3,58 +3,58 @@ hljs.initHighlightingOnLoad();
 
 // human and robot switch
 $('.human').hide();
-$('.robot pre').click(function(){
-    $('.robot').hide();
-    $('.human').show();
+$('.robot pre').click(function() {
+  $('.robot').hide();
+  $('.human').show();
 });
-$('.human button').click(function(){
-    $('.robot').show();
-    $('.human').hide();
+$('.human button').click(function() {
+  $('.robot').show();
+  $('.human').hide();
 });
 
 $(".toggle").slideUp();
-$(".trigger").click(function(){
-    $(this).next(".toggle").slideToggle("slow");
-  });
+$(".trigger").click(function() {
+  $(this).next(".toggle").slideToggle("slow");
+});
 
 //sliding panels
 function actionLeft() {
-  if ( $("#left").hasClass("isOpen") ) {
-        $("#left").animate({
-          marginLeft: '0vw'
-        }),
-        $("#left-door").animate({
-            width: '20px'
-        });
-      } else {
-        $("#left").animate({
-          marginLeft: '75vw'
-        }),
-        $("#left-door").animate({
-            width: '80%'
-        });
-      }
-      $(this).toggleClass("isOpen");
+  if ($("#left").hasClass("isOpen")) {
+    $("#left").animate({
+        marginLeft: '0vw'
+      }),
+      $("#left-door").animate({
+        width: '20px'
+      });
+  } else {
+    $("#left").animate({
+        marginLeft: '75vw'
+      }),
+      $("#left-door").animate({
+        width: '80%'
+      });
+  }
+  $(this).toggleClass("isOpen");
 }
 
 
 function actionRight() {
-    if ( $("#right").hasClass("isOpen") ) {
-      $("#right").animate({
+  if ($("#right").hasClass("isOpen")) {
+    $("#right").animate({
         left: '88%'
       }),
       $("#right-door").animate({
-          width: '20px'
+        width: '20px'
       });
-    } else {
-      $("#right").animate({
+  } else {
+    $("#right").animate({
         left: '13vw'
       }),
       $("#right-door").animate({
-          width: '80%'
+        width: '80%'
       });
-    }
-    $("#right").toggleClass("isOpen");
+  }
+  $("#right").toggleClass("isOpen");
 }
 
 //mobile swipe and click
@@ -66,30 +66,30 @@ $(".clickable2").on("click", actionRight);
 
 //change z-index to panels because there was a bug in which you would open them both and get stuck
 $(function() {
-    // Change this selector to find whatever your 'boxes' are
+  // Change this selector to find whatever your 'boxes' are
   var top = $(".panel-container");
-    // Set up click handlers for each box
-    top.click(function() {
-        var el = $(this), // The box that was clicked
-            max = 0;
-        // Find the highest z-index
-        top.each(function() {
-            // Find the current z-index value
-            var z = parseInt( $( this ).css( "z-index" ), 10 );
-            // Keep either the current max, or the current z-index, whichever is higher
-            max = Math.max( max, z );
-        });
-
-        // Set the box that was clicked to the highest z-index plus one
-        el.css("z-index", max + 10 );
+  // Set up click handlers for each box
+  top.click(function() {
+    var el = $(this), // The box that was clicked
+      max = 0;
+    // Find the highest z-index
+    top.each(function() {
+      // Find the current z-index value
+      var z = parseInt($(this).css("z-index"), 10);
+      // Keep either the current max, or the current z-index, whichever is higher
+      max = Math.max(max, z);
     });
+
+    // Set the box that was clicked to the highest z-index plus one
+    el.css("z-index", max + 10);
+  });
 });
 //video plays when you click on the trigger
-$('#triggervideo').click(function(){
+$('#triggervideo').click(function() {
   $('video').trigger('play');
 })
 
 //image zoom on click
-$( ".image" ).click(function() {
+$(".image").click(function() {
   $(this).toggleClass('large')
 });

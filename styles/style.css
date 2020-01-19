@@ -24,26 +24,34 @@ h1 {
   margin-bottom: vh;
 }
 
-img{
-    font-size: 3vw;
-    line-height: 3.5vw;
+img {
+  font-size: 3vw;
+  line-height: 3.5vw;
 }
 
 video {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
-button{
+button {
   font-size: 4vw;
-  width:90%;
+  width: 90%;
   display: absolute;
   margin-top: 4%;
-  text-align:center;
-  border: 2px solid #00008B;
+  text-align: center;
+  /*border: 2px solid #00008B;*/
   background: white;
   color: #00008B;
   align-items: center;
+}
+
+pre {
+  padding-left: 15%;
+  padding-right: 5%;
+  width: 100%;
+  margin-top: -2vh;
+
 }
 
 .trigger {
@@ -71,7 +79,8 @@ button{
   padding-left: 9vw;
   position: fixed;
   bottom: 0;
-  left: 4vw;;
+  left: 4vw;
+  ;
   margin: 0;
   overflow: scroll;
   height: 8%;
@@ -83,20 +92,13 @@ button{
   /*margin-left: 5%;*/
   font-size: 3vw;
   /*padding-left: 5%;*/
-
 }
 
-pre {
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
-  margin-top: -2vh;
-}
 
 .human {
   font-family: 'IBM Plex Sans';
   color: black;
-  }
+}
 
 .text {
   line-height: 2.5vw;
@@ -143,29 +145,29 @@ pre {
   /*font-family: Times;*/
 }
 
-.panel-container{
+.panel-container {
   position: absolute;
   z-index: 10;
 }
 
 .circle {
-  width:100px;
-  height:100px;
-  border-radius:250px;
-  font-size:39px;
-  color:#fff;
-  line-height:100px;
-  text-align:center;
-  background:#00008B;
+  width: 100px;
+  height: 100px;
+  border-radius: 250px;
+  font-size: 39px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #00008B;
   border: 1px solid white;
 }
 
 .image {
   transition: all 2s;
-  width:30%;
+  width: 30%;
 }
 
-.description{
+.description {
   font-size: 3vw;
   line-height: 3.5vw;
 }
@@ -176,8 +178,8 @@ pre {
 
 #right {
   position: fixed;
-  top:5vh;
-  left:88%;
+  top: 5vh;
+  left: 88%;
 }
 
 #sub {
@@ -186,25 +188,24 @@ pre {
 
 #left {
   position: fixed;
-  top:60vh;
+  top: 60vh;
   left: 2vw;
 }
 
 #left-door {
   color: white;
   overflow: scroll;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   padding: 30px;
   border: none;
-
 }
 
 #right-door {
   color: white;
   overflow: scroll;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   padding: 30px;
 }
 
@@ -218,33 +219,28 @@ pre {
 }
 
 @media screen and (min-width: 700px) {
-
-  h1{
+  h1 {
     font-size: 12vw;
     line-height: 12vw;
   }
-
-  .trigger{
+  .trigger {
     font-size: 6vw;
     letter-spacing: -1px;
   }
-
-  .text{
+  .text {
     font-size: 4.5vw;
     line-height: 6.5vw;
   }
-
   .story {
     margin: 30px;
     font-size: 3vw;
     font-family: 'IBM Plex Sans', sans-serif;
   }
-
   #content {
     text-align: left;
     padding-top: 10px;
     padding-left: 10px;
     margin-left: 8vw;
     margin-top: 3vw;
-    width:88%;
-}
+    width: 88%;
+  }
