@@ -50,6 +50,8 @@ button {
   background: white;
   color: #00008B;
   align-items: center;
+  text-align: center;
+vertical-align: middle;
 }
 
 pre {
@@ -119,11 +121,12 @@ pre {
   margin-bottom: 3vh;
   margin-left: -4vw;
   text-align: left;
+  width: 100%;
 }
 
 .term {
   font-size: 10px;
-  line-height: 11px;
+  line-height: 2px;
 }
 
 .row {
@@ -235,7 +238,7 @@ pre {
   padding-left: 10px;
   margin-left: 20%;
   /*margin-top: 85%;*/
-  width: 60%;
+  width: 80%;
 }
 
 .red {
@@ -261,11 +264,13 @@ pre {
     font-size: 14px;
     font-family: 'IBM Plex Sans', sans-serif;
   }
+
   #content {
     text-align: left;
     padding-top: 10px;
     /*padding-left: 10px;*/
+    /*margin-right: -10vw;*/
     margin-left: 15%;
     margin-top: 3vw;
-    width: 80%;
+    width: 85%;
   }
