@@ -22,7 +22,7 @@ $(".trigger").click(function() {
 function actionLeft() {
   if ($("#left").hasClass("isOpen")) {
     $("#left").animate({
-        marginLeft: '0.5vw'
+        marginLeft: '1vw'
       }),
       $("#left-door").animate({
         width: '20px'
