@@ -134,7 +134,7 @@ pre {
 .row {
   width: 100%;
   display: flex;
-  margin-top: 8vh;
+  margin-top: 1vh;
 }
 
 .html-class {
@@ -249,7 +249,7 @@ pre {
 
 @media (min-width: 200px) and (max-width: 600px) {
   .trigger {
-    font-size: 14px;
+    font-size: 18px;
     /*letter-spacing: -1px;*/
   }
 
@@ -273,6 +273,6 @@ pre {
     /*padding-left: 10px;*/
     /*margin-right: -10vw;*/
     margin-left: 15%;
-    margin-top: 3vw;
+    margin-top: 0vw;
     width: 85%;
   }
