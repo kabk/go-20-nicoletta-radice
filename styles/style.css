@@ -21,7 +21,7 @@ h1 {
   text-align: left;
   color: #00008B;
   font-family: 'IBM Plex Serif';
-  margin-top: 0vh;
+  margin-top: 2vh;
   margin-bottom: 6vh;
 }
 
@@ -134,7 +134,7 @@ pre {
 .row {
   width: 100%;
   display: flex;
-  margin-top: 1vh;
+  margin-top: vh;
 }
 
 .html-class {
