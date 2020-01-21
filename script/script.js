@@ -12,6 +12,7 @@ $('.human button').click(function() {
   $('.human').hide();
 });
 
+//trigger and toggle
 $(".toggle").slideUp();
 $(".trigger").click(function() {
   $(this).next(".toggle").slideToggle("slow");
@@ -21,17 +22,17 @@ $(".trigger").click(function() {
 function actionLeft() {
   if ($("#left").hasClass("isOpen")) {
     $("#left").animate({
-        marginLeft: '0vw'
+        marginLeft: '0.5vw'
       }),
       $("#left-door").animate({
         width: '20px'
       });
   } else {
     $("#left").animate({
-        marginLeft: '75vw'
+        marginLeft: '75.5vw'
       }),
       $("#left-door").animate({
-        width: '80%'
+        width: '80vw'
       });
   }
   $(this).toggleClass("isOpen");
@@ -51,7 +52,7 @@ function actionRight() {
         left: '13vw'
       }),
       $("#right-door").animate({
-        width: '80%'
+        width: '80vw'
       });
   }
   $("#right").toggleClass("isOpen");
